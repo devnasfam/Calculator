@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { AppContext } from './AppContext';
 import Layout from './Layout';
-import './style.css';
+import './index.css';
 
 const Calculator = () =>{
   const {isBg} = useContext(AppContext);
