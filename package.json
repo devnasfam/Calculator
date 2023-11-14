@@ -1,7 +1,7 @@
 {
   "name": "food-app",
-  "private": true,
   "version": "0.0.0",
+  "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -20,5 +20,16 @@
     "postcss": "^8.4.20",
     "tailwindcss": "^3.3.5",
     "vite": "^4.0.0"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ],
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   }
 }
