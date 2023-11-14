@@ -1,36 +1,24 @@
 {
-  "dependencies": {
-    "autoprefixer": "^9.8.0",
-    "cssnano": "^4.1.10",
-    "npm-run-all": "^4.1.5",
-    "onchange": "^7.0.2",
-    "postcss-cli": "^7.1.1",
-    "postcss-import": "^12.0.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
-    "tailwindcss": "^1.4.6"
-  },
+  "name": "food-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "postcss": "postcss src/tailwind/tailwind.css -o src/style.css",
-    "watch:postcss": "onchange -i 'src/tailwind' -- npm run postcss",
-    "start:react": "react-scripts start",
-    "start": "run-p watch:postcss start:react",
-    "build": "NODE_ENV=production npm run postcss && react-scripts build"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "~18.0.9",
+    "@vitejs/plugin-react": "^3.0.0",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.20",
+    "tailwindcss": "^3.3.5",
+    "vite": "^4.0.0"
   }
 }
